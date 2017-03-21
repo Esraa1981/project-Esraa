@@ -14,7 +14,7 @@ body
 }
 #wrapper
 {
-	width: 100%;
+	width: 100%;	
 }
 
 /*Start Navigation Bar */
@@ -28,18 +28,18 @@ nav{
 	}
 
 
-ul {
+nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
 }
 
-li {
+nav li {
     float: left;
 }
 
-li a, .dropbtn {
+nav li a, .dropbtn {
     display: inline-block;
     color: white;
     text-align: center;
@@ -50,11 +50,11 @@ li a, .dropbtn {
     width: 120px;	
 }
 
-li a:hover, .dropdown:hover .dropbtn {
+nav li a:hover, .dropdown:hover .dropbtn {
     background: rgb(67,155,214);
 }
 
-li.dropdown {
+nav li.dropdown {
     display: inline-block;
 }
 
@@ -120,6 +120,7 @@ li.dropdown {
 	text-align: center;
 	font-family: 'Aclonica', sans-serif;
 	font-size: 60px;
+	text-shadow: 2px 2px #aaaaaa;
 	z-index: 0;
 	position: absolute;
 	animation: txtmove 10s;
@@ -141,13 +142,14 @@ li.dropdown {
 
 /*	color:#dd3b2a;*/
 	background: url(images/soccer.jpg);
-	width: 1425px;
+	background-size: cover;
+	width: 100%;
 	height: 325px;
-
 }
 #box2{	
 	background: url(images/swimming.jpg);
-	width: 1425px;
+	background-size: cover;
+	width: 100%;
 	height: 325px;
 
 }
@@ -155,7 +157,8 @@ li.dropdown {
 #box3{	
 
 	background: url(images/trip.jpg);
-	width: 1425px;
+	background-size: cover;
+	width: 100%;
 	height: 325px;
 
 
@@ -201,7 +204,7 @@ li.dropdown {
 footer
 {
 	position: relative;
-	top: 980px;
+	/*top: 980px;*/
 
 }
 #line{
@@ -321,12 +324,14 @@ padding: 20px;
 	background:rgb(15,42,61);
 	color: white;
 }
-#prices table
+.prices table , .prices td , .prices tr
 {
-	font-family: 'Alegreya', serif;
-	padding: 3px;
-	text-align: center;
-	border: 2 white solid;
+			color: rgb(183,177,91);
+			font-size: 25px;
+			border: 3px rgb(204,46,54) solid;
+			text-align:center;
+			background: rgb(255,238,211);
+			margin-right: 35px;
 }
 form ,input
 {
@@ -336,4 +341,8 @@ form ,input
 	margin: 3px;
 }
 
-
+.longAns{
+	height: 300px;
+	overflow: scroll;
+	width: 100%;
+}
