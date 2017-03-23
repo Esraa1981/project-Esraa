@@ -1,33 +1,34 @@
-
+/*importing the fonts from google font*/
 @import url('https://fonts.googleapis.com/css?family=Aclonica|Eczar');
 @import url('https://fonts.googleapis.com/css?family=Alegreya|Slabo+27px');
+@import url('https://fonts.googleapis.com/css?family=Nova+Oval');
+
+/*reseting the default values of padding , margin and border */
 *
 {
 	padding: 0;
 	margin:0;
 	border: 0;
 }
-body
-{
+/* centering the page body*/
+body{
 	margin: 0 auto;
 	background: rgb(67,155,214);
 }
-#wrapper
-{
+/* the page wrapper that takes the full page width*/
+#wrapper{
 	width: 100%;	
 }
-
 /*Start Navigation Bar */
+/*  The width of the navigation bar is the page width*/
 nav{
-
 	background:rgb(15,42,61);
 	width: 100%;
 	height: 53px;
 	border-bottom: 5px solid white;	
-	display: inline-block;
-	}
+}
 
-
+/* remove the bullets from the list item*/
 nav ul {
     list-style-type: none;
     margin: 0;
@@ -35,10 +36,11 @@ nav ul {
     overflow: hidden;
 }
 
+/* align the items in the navigation to left*/
 nav li {
     float: left;
 }
-
+/* styling the menu tabs , align the list item side by side , all tabs are equal width , the text is centered inside the tab*/
 nav li a, .dropbtn {
     display: inline-block;
     color: white;
@@ -50,14 +52,12 @@ nav li a, .dropbtn {
     width: 120px;	
 }
 
+/* hover effect on tabs */
 nav li a:hover, .dropdown:hover .dropbtn {
     background: rgb(67,155,214);
 }
 
-nav li.dropdown {
-    display: inline-block;
-}
-
+/* when no hovering hide the submenu*/
 .dropdown-content {
     display: none;
     position: absolute;
@@ -75,14 +75,16 @@ nav li.dropdown {
     min-width: 200px;
 }
 
-.dropdown-content a:hover {background-color: #f1f1f1}
-
+.dropdown-content a:hover {
+	background-color: #f1f1f1;
+}
+/* display the submenu when hover*/
 .dropdown:hover .dropdown-content {
     display: block;
 }
 /* End of Navigation Bar*/
 
-/* Paralax effect*/
+/* Paralax effect on animation scene */
 #animation
 {
 	height:560px;
@@ -102,7 +104,10 @@ nav li.dropdown {
     opacity: .6;
 
 }
+/* rotating the sun*/
 @keyframes spin { 100% {transform:rotate(360deg); } }
+
+/* center the girl in the page */
 #julia
 {
 	position: absolute;
@@ -110,11 +115,12 @@ nav li.dropdown {
     animation-fill-mode: forwards;
     left:25%;
 }
+/*let the girl rise*/
 @keyframes mymove {
     from {top: 600px;}
     to {top: 0px;}
 }
-
+/* let the text come after the girl*/
 #campName
 {	color: rgb(47,131,200);
 	text-align: center;
@@ -126,6 +132,7 @@ nav li.dropdown {
 	animation: txtmove 10s;
 	animation-fill-mode: forwards;
 }
+/* move the text up*/
 @keyframes txtmove {
     from {top: 600px;}
     to {top: 440px;}
@@ -133,14 +140,14 @@ nav li.dropdown {
 /*End of moving scene */
 
 
-
+/* styling the three boxes in Home page*/
 #activities
 {	position: relative;
 	top:580px;	
 }
-#box1{	
 
-/*	color:#dd3b2a;*/
+/* styling the three boxes in my template*/
+#box1{	
 	background: url(images/soccer.jpg);
 	background-size: cover;
 	width: 100%;
@@ -153,16 +160,13 @@ nav li.dropdown {
 	height: 325px;
 
 }
-
 #box3{	
-
 	background: url(images/trip.jpg);
 	background-size: cover;
 	width: 100%;
 	height: 325px;
-
-
 }
+/* stylingright side*/
 #note1{
 	background: rgba(255,255,255,.7);
 	width: 50%;
@@ -171,6 +175,7 @@ nav li.dropdown {
 	padding:40px;	
 	overflow: hidden;
 }
+/* styling the left side*/
 #note2{
 	background: rgba(255,255,255,.7);
 	width: 50%;
@@ -187,14 +192,14 @@ nav li.dropdown {
 	padding:40px;
 	overflow: hidden;	
 }
-
+/* styling the text in h1 tag in  home page*/
 .box h1
 {
 	color: rgb(15,42,61);
 	padding: 10px;
 	font-family: 'Slabo 27px', serif;
-
 }
+/* styling the text in p tag in  home page*/
 .box p
 {
 	font-family: 'Alegreya', serif;
@@ -204,14 +209,14 @@ nav li.dropdown {
 footer
 {
 	position: relative;
-	/*top: 980px;*/
-
 }
+/* styling the thick line inside the footer*/
 #line{
 	background:rgb(15,42,61) ;
 	height: 40px;
 	border-bottom: 5px solid rgb(67,155,214);
 }
+/* styling footer*/
 #info{
 	border-top: 5px solid white;
 	background: rgb(67,155,214);
@@ -219,10 +224,11 @@ footer
 	display: flex;
 
 }
+/* camp logo*/
 #footer1{
 	flex: 1;
-
 }
+/* styling the contact information part */
 #footer2{
 	flex: 1;
 	padding: 30px;
@@ -230,10 +236,12 @@ footer
 	line-height: 30px;
 	font-size: larger;
 }
+/* styling the third part of facebook*/
 #footer3{
 	flex: 2;
 	 align-self: flex-end;
 }
+/* styling the page title*/
 .pageTitle
 {
 	margin-top: 20px;
@@ -246,6 +254,7 @@ footer
 	font-family: 'Alegreya', serif;
 	font-weight: bold;
 }
+/* the white box styling on boxes */
 .article
 {
 	height: 300px;
@@ -258,6 +267,7 @@ footer
 float: left;
 flex: 1
 }
+/* styling the text h3 inside the box*/
 .article h3
 {
 	font-family: 'Slabo 27px', serif;
@@ -265,17 +275,18 @@ flex: 1
 	font-size: 25px;
 	padding: 20px;
 }
+/* styling the text p inside the box*/
 .article p
 {
 	font-family: 'Alegreya', serif;
 	font-weight: bold;
 	font-size: 20px;
-	/*margin-left: 400px;*/
 	flex: 4;
 }
+/* the white space inside the box*/
 .part
 {
-	height: 300px;
+	height: 330px;
 	padding: 20px;
 	background: rgba(255,255,255,.7);
 	overflow: hidden;	
@@ -299,22 +310,22 @@ padding: 20px;
 .part h3
 {
 	font-family: 'Slabo 27px', serif;
-	
 	font-weight: bold;
 	font-size: 25px;	
 }
-
+/* styling the acivities table*/
 #part1 table tr td , #part2 table tr td
 {
 	font-family: 'Alegreya', serif;
 	padding: 3px;
-	text-align: left;
 }
+/*  positioning table */
 #part1 table , #part2 table
 {
 	margin-left: 50px;
 	margin-top: 5px;
 }
+/* styling the table heading*/
 #part1 th , #part2 th
 {
 	font-family: 'Slabo 27px', serif;
@@ -324,15 +335,17 @@ padding: 20px;
 	background:rgb(15,42,61);
 	color: white;
 }
+/* styling the fees table*/
 .prices table , .prices td , .prices tr
 {
-			color: rgb(183,177,91);
-			font-size: 25px;
-			border: 3px rgb(204,46,54) solid;
-			text-align:center;
-			background: rgb(255,238,211);
-			margin-right: 35px;
+	color: rgb(183,177,91);
+	font-size: 25px;
+	border: 3px rgb(204,46,54) solid;
+	text-align:center;
+	background: rgb(255,238,211);
+	margin-right: 35px;
 }
+/* styling the form*/
 form ,input
 {
 	font-family: 'Alegreya', serif;
@@ -340,9 +353,18 @@ form ,input
 	font-size: 20px;
 	margin: 3px;
 }
-
-.longAns{
-	height: 300px;
-	overflow: scroll;
-	width: 100%;
+/* hiding the answers intially in FAQ*/
+.answers
+{
+	display: none;
+	background: rgba(255,255,255,.6);
 }
+/* styling the hyperlink*/
+a{
+	text-decoration: none;
+	font-family: 'Nova Oval', cursive;
+}
+a:hover{
+	font-size: larger;
+}
+

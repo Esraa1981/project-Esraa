@@ -1,315 +1,347 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>FAQ</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<script src="Javascript.js"></script>
-<!-- 	<style type="text/css">
-		td,tr, table {
-			color: rgb(183,177,91);
-			font-size: 25px;
-			border: 3px rgb(204,46,54) solid;
-			text-align:center;
-			background: rgb(255,238,211);
-			margin-right: 35px;
-		}
-	</style> -->
-</head>
-<body>
-	<div id="wrapper">
-<nav>
-		<ul>
-		  <li><a href="index.html">Home</a></li>
-		  <li><a href="about_us.html">About Us</a></li>
-		  <li class="dropdown">
-		    <a href="javascript:void(0)" class="dropbtn">Enrollment</a>
-		    <div class="dropdown-content">
-		      <a href="Tuition-forms.html">Tuition &amp; Forms</a>
-		      <a href="https://secureonlineshopper.com/worldofdiscovery-june.php">Online registration</a>
-		  <li><a href="open_house.html">Open House</a></li>
-		  <li><a href="Programs.html">Programs</a></li>
-		  <li><a href="faq.html">FAQ</a></li>		  
-		  <li><a href="Transportation.html">Transportation</a></li>
-		  <li><a href="contact_us.html">Contact Us</a></li>
-		    </div>
-		</ul>
-	</nav>
+	<head>
+		<title>FAQ</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script src="Javascript.js"></script>
+	</head>
+	<body>
+		<!-- the wrapper div that containes the whole page -->
+		<div id="wrapper">
+			<!-- Navigation menu -->
+			<nav>
+				<ul>
+				  <li><a href="index.html">Home</a></li>
+				  <li><a href="about_us.html">About Us</a></li>
+				  <!-- drop down menu -->
+				  <li class="dropdown"><a href="javascript:void(0)" class="dropbtn">Enrollment</a>
+				    <div class="dropdown-content">
+				      <a href="Tuition-forms.html">Tuition &amp; Forms</a>
+				      <a href="https://secureonlineshopper.com/worldofdiscovery-june.php">Online registration</a></div></li>
+				  <li><a href="open_house.html">Open House</a></li>
+				  <li><a href="Programs.html">Programs</a></li>
+				  <li><a href="faq.html">FAQ</a></li>		  
+				  <li><a href="Transportation.html">Transportation</a></li>
+				  <li><a href="contact_us.html">Contact Us</a></li>
+				  <!-- bookmark picture with logo -->
+				  <img style="position: absolute; z-index:3 ; " src="images/bookmark1.png">
+				</ul>
+			</nav>
+			<!--rotating image in the banner  -->
+			<img style=" border-bottom: 5px solid rgb(15,42,61)" id="banner" name="sss" src="images/1.jpg" width="100%" height="325" />
+			<!-- page title -->
+			<div class="pageTitle">
+				<h1>SUMMER CAMP FREQUENTLY ASKED QUESTIONS:</h1>
+			</div>
+			<!--wrapper blue rectangle in the back -->
+			<!-- box 1 -->
+			<div style="height: auto;" class="part">
+				<!-- white rectangle in the back -->
+				<div  id="part1">
+					<!-- Questions and Answers . Left side box -->
+					<div id="side1-1">
+						<h3 style="cursor:pointer" onclick="toggle('A1');"  id="Q1">Q:What ages does Discovery Sports Academy and World of Discovery Summer Day Camp of Queens, New York serve? </h3>
+						<div class="answers" id="A1">
+							<p>A: Ages 4-15 years for both summer camp programs.</p><br/>
+						</div>
 
-		<!--rotating image in the banner  -->
-		<img style=" border-bottom: 5px solid rgb(15,42,61)" id="banner" name="sss" src="images/1.jpg" width="100%" height="325" />
-		<!-- page title -->
-		<div class="pageTitle">
-		<h1>SUMMER CAMP FREQUENTLY ASKED QUESTIONS:</h1>
-		</div>
+						<h3 style="cursor:pointer" onclick="toggle('A2');" id="Q2">Q: How long are the summer day camp programs?</h3>
 
-<!-- Article 1 -->
-		<div style="height: 2700px" class="part">
-			
-			<div  id="part1">
-				<div id="side1-1">
-					<h3 >Q:What ages does Discovery Sports Academy and World of Discovery Summer Day Camp of Queens, New York serve? </h3>
-					<p>A: Ages 4-15 years for both summer camp programs.</p><br/>
+						<div class="answers" id="A2">
+							<p>A: The Discovery Sports Academy offers 2-8 week instructional programs. There are also 2-8 week programs available for World of Discovery Summer Day Camp of Queens, New York.</p><br/>
+						</div>
 
-					<h3>Q: How long are the summer day camp programs?</h3>
+						<h3 style="cursor:pointer" onclick="toggle('A3');" id="Q3">Q: How do your prices compare with other Summer Day Camps?</h3>
 
-					<p>A: The Discovery Sports Academy offers 2-8 week instructional programs. There are also 2-8 week programs available for World of Discovery Summer Day Camp of Queens, New York.</p><br/>
+						<div class="answers" id="A3">
+							<p>A: We are extremely competitive-among the reasonably priced-and also offer discounts for more than one child per family. </p><br/>
+						</div>
 
-					<h3>Q: How do your prices compare with other Summer Day Camps?</h3>
+						<h3 style="cursor:pointer" onclick="toggle('A4');" id="Q4">Q: How is summer camp transportation handled? </h3>
+						<div class="answers" id="A4">
+							<p>A: We have a relationship with one of the region’s premier bus companies. This organization adheres to a strict employee/driver screening program and uses new vehicles equipped with seat belts to ensure the highest standards for safe dependable transportation. Each child is picked up and dropped off door-to-door at prearranged times.</p><br/>
+						</div>
 
-					<p>A: We are extremely competitive-among the reasonably priced-and also offer discounts for more than one child per family. </p><br/>
+						<h3 style="cursor:pointer" onclick="toggle('A5');" id="Q5">Q: Does your summer camp take any special precautions with regard to transportation?</h3>
+						<div class="answers" id="A5">
+							<p>A: At the beginning of each camp program, we conduct dry runs to make sure that all drivers and bus couselors know their routes. For added safety, all buses are staffed by bus counselors. Bus counselors are the first people picked up and the last to be dropped off. You will be provided with their cellular phone numbers in the event that you need to reach them.</p><br/>
+						</div>
+						
+						<h3 style="cursor:pointer" onclick="toggle('A6');" id="Q6">Q: Do you hold Parent’s Days or other summer camp orientation programs? </h3>
+						<div class="answers" id="A6">
+							<p>A: At World of Discovery Day Camp, we have a motto, "Every day is Parent’s Day." We encourage family members to visit for a first-hand look at what a Discovery Summer is all about. We guarantee you’ll wish you were a kid again!</p><br/>
+						</div>
 
-					<h3>Q: How is summer camp transportation handled? </h3>
-					<p>A: We have a relationship with one of the region’s premier bus companies. This organization adheres to a strict employee/driver screening program and uses new vehicles equipped with seat belts to ensure the highest standards for safe dependable transportation. Each child is picked up and dropped off door-to-door at prearranged times.</p><br/>
+						<h3 style="cursor:pointer" onclick="toggle('A7');" id="Q7">Q: Can my child be in the same group as his/her friend?</h3>
+						<div class="answers" id="A7">
+							<p>A: Our goal is to make you and your child happy. We have no problem putting your child in the same group as his/her friends.</p><br/>
+						</div>
 
-					<h3>Q: Does your summer camp take any special precautions with regard to transportation?</h3>
-					<p>A: At the beginning of each camp program, we conduct dry runs to make sure that all drivers and bus couselors know their routes. For added safety, all buses are staffed by bus counselors. Bus counselors are the first people picked up and the last to be dropped off. You will be provided with their cellular phone numbers in the event that you need to reach them.</p><br/>
-					<h3>Q: Do you hold Parent’s Days or other summer camp orientation programs? </h3>
-					<p>A: At World of Discovery Day Camp, we have a motto, "Every day is Parent’s Day." We encourage family members to visit for a first-hand look at what a Discovery Summer is all about. We guarantee you’ll wish you were a kid again!</p><br/>
+						<h3 style="cursor:pointer" onclick="toggle('A8');" id="Q8">Q: My child is not going to be starting until the middle of the summer. Will he/she feel left out?</h3>
+						<div class="answers" id="A8">
+							<p>A: Not all campers begin summer camp at the beginning of the summer. Many campers start at different points throughout the summer. Our summer camp staff is aware of this and is trained to make all children feel like part of the group regardless of when they begin.</p><br/>
+						</div>
 
-					<h3>Q: Can my child be in the same group as his/her friend?</h3>
-					<p>A: Our goal is to make you and your child happy. We have no problem putting your child in the same group as his/her friends.</p><br/>
+						<h3 style="cursor:pointer" onclick="toggle('A9');" id="Q9">Q: My child is not very sports orientated. Are there other activities for my child to do?</h3>
+						<div class="answers" id="A9">
+							<p>A: While our summer camp staff will encourage your child to be active and participate in sports activities, there are always choices. You child may choose to participate in activities such as arts and crafts, ping pong, knock hockey, hands-on science, nature walks and much more.</p><br/>
+						</div>
 
-					<h3>Q: My child is not going to be starting until the middle of the summer. Will he/she feel left out?</h3>
-					<p>A: Not all campers begin summer camp at the beginning of the summer. Many campers start at different points throughout the summer. Our summer camp staff is aware of this and is trained to make all children feel like part of the group regardless of when they begin.<p><<br/>
+						<h3 style="cursor:pointer" onclick="toggle('A10');" id="Q10">Q: How does your summer camp compare with the other summer camps in Queens? </h3>
+						<div class="answers" id="A10">
+							<p>A: Rather than tell you what other summer camps in Queens offer or do not offer, we prefer to let you know about what makes World of Discovery Summer Day Camp among the best summer camps in Queens, NY. Our summer camp staff is second to none when it comes to summer camps in Queens.  Our summer camp staff of certified principals and teachers supervise our camp counselors to provide an excellent camper to counselor ratio.  As far as summer camps in Queens go we offer a wide variety of quality trips and camper activities. We take pride in our amazing summer camp swim program that includes swim instruction by our team of American Red Cross certified lifeguards.</p><br/>
+						</div>
 
-					<h3>Q: My child is not very sports orientated. Are there other activities for my child to do?</h3>
-					<p>A: While our summer camp staff will encourage your child to be active and participate in sports activities, there are always choices. You child may choose to participate in activities such as arts and crafts, ping pong, knock hockey, hands-on science, nature walks and much more.</p><br/>
+						<h3 style="cursor:pointer" onclick="toggle('A11');" id="Q11">Q: Everything sounds wonderful! How do I sign up?</h3>
+						<div class="answers" id="A11">
+							<p>A: You can call us at (718) 229-3037 or you can print up a copy of our <a href="woddc_enroll.pdf"> summer camp enrollment form</a> and mail or fax it to:
+							World of Discovery Summer Day Camp of Bayside Queens
+							P.O. BOX 604010 
+							BAY TERRACE, NY 11360-4010
+							(Just open the <a href="woddc_enroll.pdf"> summer camp enrollment form here</a> and click "File" and then "Print..." to print up the enrollment form.)
+							You can also enroll online</p><br/>
+						</div>
 
-					<h3>Q: How does your summer camp compare with the other summer camps in Queens? </h3>
-					<p>A: Rather than tell you what other summer camps in Queens offer or do not offer, we prefer to let you know about what makes World of Discovery Summer Day Camp among the best summer camps in Queens, NY. Our summer camp staff is second to none when it comes to summer camps in Queens.  Our summer camp staff of certified principals and teachers supervise our camp counselors to provide an excellent camper to counselor ratio.  As far as summer camps in Queens go we offer a wide variety of quality trips and camper activities. We take pride in our amazing summer camp swim program that includes swim instruction by our team of American Red Cross certified lifeguards.</p><br/>
+						<h3 style="cursor:pointer" onclick="toggle('A12');" id="Q12">Q: Does my child need a medical form completed before summer camp starts?</h3>
+						<div class="answers" id="A12">
+							<p>A: Yes, it is required. Please fill one out and return it to us before the first day of summer camp. In order to print a <a href="woddc_med.pdf">summer camp medical form</a>, just open the<a href="woddc_med.pdf"> summer camp medical form here</a> and click "File" and then "Print..." to print up the medical form.</p><br/>
+						</div>
 
-					<h3>Q: Everything sounds wonderful! How do I sign up?</h3>
-					<p>A: You can call us at (718) 229-3037 or you can print up a copy of our <a href="woddc_enroll.pdf"> summer camp enrollment form</a> and mail or fax it to:
-					World of Discovery Summer Day Camp of Bayside Queens
-					P.O. BOX 604010 
-					BAY TERRACE, NY 11360-4010
-					(Just open the <a href="woddc_enroll.pdf"> summer camp enrollment form here</a> and click "File" and then "Print..." to print up the enrollment form.)
-					You can also enroll online<p><br/>
+						<h3 style="cursor:pointer" onclick="toggle('A13');" id="Q13">Q: Is my child's summer day camp tuition tax deductable?</h3>
+						<div class="answers" id="A13">
+							<p>A: Yes, it is. Please use the following Federal Tax ID# EIN: 11-3243720 when filing your tax return.</p><br/>
+						</div>
 
-					<h3>Q: Does my child need a medical form completed before summer camp starts?</h3>
-					<p>A: Yes, it is required. Please fill one out and return it to us before the first day of summer camp. In order to print a <a href="woddc_med.pdf">summer camp medical form</a>, just open the<a href="woddc_med.pdf"> summer camp medical form here</a> and click "File" and then "Print..." to print up the medical form.</p><br/>
-
-					<h3>Q: Is my child's summer day camp tuition tax deductable?</h3>
-					<p>A: Yes, it is. Please use the following Federal Tax ID# EIN: 11-3243720 when filing your tax return.</p><br/>
-
-					<h3>Q: What areas does World of Discovery Summer Day Camp pick up in?</h3>
-					<p>A: Most of our campers come from Bayside, Whitestone, Flushing, Douglaston, and Little Neck. However, we also pick up in Fresh Meadows, Malba, Middle Village, Bay Terrace, Electchester, Windsor Park, College Point, Glen Oaks, Great Neck Terrace, Bellerose, Floral Park, Forest Hills, Rego Park, Hollis Hills, Jamaica Estates, Astoria, Jackson Heights, Queens Village, Woodside, Glendale, Ridgewood, Maspeth, Long Island City, Sunnyside, Ozone Park, Kew Gardens, Corona, Howard Beach, Cambria Heights, Rosedale, Laurelton, Hollis, St. Albans, Oakland Gardens, Richmond Hill and Holliswood.</p><br/>
-					
-					<h3>Q: What are the approximate pick up and drop off times in my Queens neighborhood?</h3>
-					<div class="longAns" >
-					<p>Summer Camp in Astoria 7:30am pick up/4:30pm drop off<br/>
-					Summer Camp in Bay Terrace 8:00am pick up/4:00pm drop off<br/>
-					Summer Camp in Bayside 8:00am pick up/4:00pm drop off<br/>
-					Summer Camp in Bellerose 7:30am pick up/4:30pm drop off<br/>
-					Summer Camp in Cambria Heights 7:30am pick up/4:30pm<br/>
-					Summer Camp in College Point 7:30am pick up/4:30pm drop off<br/>
-					Summer Camp in Corona 7:30am pick up/4:30pm<br/>
-					Summer Camp in Douglaston 8:00am pick up/4:00pm drop off<br/>
-					Summer Camp in Electchester 7:450am pick up/4:15pm drop off<br/>
-					Summer Camp in Floral Park 7:30am pick up/4:30pm drop off
-					<br/>Summer Camp in Flushing 7:45am pick up/4:15pm drop off
-					<br/>Summer Camp in Forest Hills 7:45am pick up/4:15pm drop off
-					<br/>Summer Camp in Fresh Meadows 7:45am pick up/4:15pm drop off
-					<br/>Summer Camp in Glen Oaks 8:00am pick up/4:00pm drop off
-					<br/>Summer Camp in Glendale 7:30am pick up/4:30pm drop off
-					<br/>Summer Camp in Great Neck Terrace 8:00am pick up/4:00pm drop off
-					<br/>Summer Camp in Hollis Hills 7:45am pick up/4:15pm drop off
-					<br/>Summer Camp in Howard Beach 7:30am pick up/4:30pm
-					<br/>Summer Day Camp in Rosedale 7:30am pick up/4:30pm
-					<br/>Summer Day Camp in Laurelton 7:30am pick up/4:30pm
-					<br/>Summer Day Camp in Hollis 7:45am pick up/4:15pm
-					<br/>Summer Day Camp in St. Albans 7:45am pick up/4:15pm
-					<br/>Summer Day Camp in Oakland Gardens 7:45am pick up/4:15pm
-					<br/>Summer Day Camp in Richmond Hill 7:45am pick up/4:15pm
-					<br/>Summer Day Camp in Holliswood 8:00am pick up/4:00pm drop off.
-					<br/>Summer Camp in Jackson Heights 7:30am pick up/4:30pm drop off
-					<br/>Summer Camp in Jamaica Estates 7:45am pick up/4:15pm drop off
-					<br/>Summer Camp in Kew Gardens 7:30am pick up/4:30pm
-					<br/>Summer Camp in Little Neck 8:00am pick up/4:00pm drop off
-					<br/>Summer Camp in Long Island City 7:30am pick up/4:30pm
-					<br/>Summer Camp in Malba 8:00am pick up/4:15pm drop off
-					<br/>Summer Camp in Maspeth 7:30am pick up/4:30pm
-					<br/>Summer Camp in Middle Village 7:30am pick up/4:30pm drop off
-					<br/>Summer Camp in Ozone Park 7:30am pick up/4:30pm
-					<br/>Summer Camp in Queens Village 7:45am pick up/4:15pm drop off
-					<br/>Summer Camp in Rego Park 7:45am pick up/4:15pm drop off
-					<br/>Summer Camp in Ridgewood 7:30am pick up/4:30pm
-					<br/>Summer Camp in Sunnyside 7:30am pick up/4:30pm
-					<br/>Summer Camp in Whitestone 8:00am pick up/4:00pm drop off
-					<br/>Summer Camp in Windsor Park 7:45am pick up/4:15pm drop off
-					<br/>Summer Camp in Woodside 7:30am pick up/4:30pm drop off</p><br/>
+						<h3 style="cursor:pointer" onclick="toggle('A14');" id="Q14">Q: What areas does World of Discovery Summer Day Camp pick up in?</h3>
+						<div class="answers" id="A14">
+							<p>A: Most of our campers come from Bayside, Whitestone, Flushing, Douglaston, and Little Neck. However, we also pick up in Fresh Meadows, Malba, Middle Village, Bay Terrace, Electchester, Windsor Park, College Point, Glen Oaks, Great Neck Terrace, Bellerose, Floral Park, Forest Hills, Rego Park, Hollis Hills, Jamaica Estates, Astoria, Jackson Heights, Queens Village, Woodside, Glendale, Ridgewood, Maspeth, Long Island City, Sunnyside, Ozone Park, Kew Gardens, Corona, Howard Beach, Cambria Heights, Rosedale, Laurelton, Hollis, St. Albans, Oakland Gardens, Richmond Hill and Holliswood.</p><br/>
+						</div>
+						
+						<h3 style="cursor:pointer" onclick="toggle('A15');" id="Q15">Q: What are the approximate pick up and drop off times in my Queens neighborhood?</h3>
+						<div class="answers" id="A15">
+							<p>Summer Camp in Astoria 7:30am pick up/4:30pm drop off<br/>
+							Summer Camp in Bay Terrace 8:00am pick up/4:00pm drop off<br/>
+							Summer Camp in Bayside 8:00am pick up/4:00pm drop off<br/>
+							Summer Camp in Bellerose 7:30am pick up/4:30pm drop off<br/>
+							Summer Camp in Cambria Heights 7:30am pick up/4:30pm<br/>
+							Summer Camp in College Point 7:30am pick up/4:30pm drop off<br/>
+							Summer Camp in Corona 7:30am pick up/4:30pm<br/>
+							Summer Camp in Douglaston 8:00am pick up/4:00pm drop off<br/>
+							Summer Camp in Electchester 7:450am pick up/4:15pm drop off<br/>
+							Summer Camp in Floral Park 7:30am pick up/4:30pm drop off
+							<br/>Summer Camp in Flushing 7:45am pick up/4:15pm drop off
+							<br/>Summer Camp in Forest Hills 7:45am pick up/4:15pm drop off
+							<br/>Summer Camp in Fresh Meadows 7:45am pick up/4:15pm drop off
+							<br/>Summer Camp in Glen Oaks 8:00am pick up/4:00pm drop off
+							<br/>Summer Camp in Glendale 7:30am pick up/4:30pm drop off
+							<br/>Summer Camp in Great Neck Terrace 8:00am pick up/4:00pm drop off
+							<br/>Summer Camp in Hollis Hills 7:45am pick up/4:15pm drop off
+							<br/>Summer Camp in Howard Beach 7:30am pick up/4:30pm
+							<br/>Summer Day Camp in Rosedale 7:30am pick up/4:30pm
+							<br/>Summer Day Camp in Laurelton 7:30am pick up/4:30pm
+							<br/>Summer Day Camp in Hollis 7:45am pick up/4:15pm
+							<br/>Summer Day Camp in St. Albans 7:45am pick up/4:15pm
+							<br/>Summer Day Camp in Oakland Gardens 7:45am pick up/4:15pm
+							<br/>Summer Day Camp in Richmond Hill 7:45am pick up/4:15pm
+							<br/>Summer Day Camp in Holliswood 8:00am pick up/4:00pm drop off.
+							<br/>Summer Camp in Jackson Heights 7:30am pick up/4:30pm drop off
+							<br/>Summer Camp in Jamaica Estates 7:45am pick up/4:15pm drop off
+							<br/>Summer Camp in Kew Gardens 7:30am pick up/4:30pm
+							<br/>Summer Camp in Little Neck 8:00am pick up/4:00pm drop off
+							<br/>Summer Camp in Long Island City 7:30am pick up/4:30pm
+							<br/>Summer Camp in Malba 8:00am pick up/4:15pm drop off
+							<br/>Summer Camp in Maspeth 7:30am pick up/4:30pm
+							<br/>Summer Camp in Middle Village 7:30am pick up/4:30pm drop off
+							<br/>Summer Camp in Ozone Park 7:30am pick up/4:30pm
+							<br/>Summer Camp in Queens Village 7:45am pick up/4:15pm drop off
+							<br/>Summer Camp in Rego Park 7:45am pick up/4:15pm drop off
+							<br/>Summer Camp in Ridgewood 7:30am pick up/4:30pm
+							<br/>Summer Camp in Sunnyside 7:30am pick up/4:30pm
+							<br/>Summer Camp in Whitestone 8:00am pick up/4:00pm drop off
+							<br/>Summer Camp in Windsor Park 7:45am pick up/4:15pm drop off
+							<br/>Summer Camp in Woodside 7:30am pick up/4:30pm drop off</p><br/><br/>
+						</div>
+						
+						<h3 style="cursor:pointer" onclick="toggle('A16');" id="Q16">Q:What Towns and zip codes does World of Discovery Day Camp pick up in?</h3>
+						<div class="answers" id="A16">
+							<p>Arverne zip code: 11692
+							<br/>Astoria Heights zip code: 11370 
+							<br/>Astoria zip code: 11102, 11103, 11105
+							<br/>Auburndale zip code: 11358 
+							<br/>Bay Terrace zip code: 11360 
+							<br/>Bayside zip code: 11359, 11360, 11361
+							<br/>Bayswater zip code: 11691 
+							<br/>Beechhurst zip code: 11357
+							<br/>Bellaire zip code: 11427, 11428, 11429 
+							<br/>Belle Harbor zip code: 11694
+							<br/>Bellerose zip code: 11426
+							<br/>Blissville zip code: 11101 
+							<br/>Breezy Point zip code: 11697
+							<br/>Briarwood zip code: 11435
+							<br/>Broad Channel zip code: 11693
+							<br/>Cambria Heights zip code: 11411
+							<br/>College Point zip code: 11356
+							<br/>Corona zip code: 11368
+							<br/>Ditmars zip code: 11005, 11370 
+							<br/>Douglaston zip code: 11362, 11363
+							<br/>Dutch Kills zip code: 11101 
+							<br/>East Elmhurst zip code: 11369, 11370, 11371
+							<br/>Edgemere zip code: 11690 
+							<br/>Elmhurst zip code: 11373
+							<br/>Far Rockaway zip code: 11096, 11690, 11691, 11692, 11693, 11694, 11695, 11697
+							<br/>Floral Park zip code: 11001, 11002, 11003, 11004, 11005
+							<br/>Flushing zip code: 11351, 11352, 11354, 11355, 11356, 11357, 11358, 11359, 11360, 11361, 11362, 11363, 11364, 11365, 11366, 11367, 11368, 11369, 11370, 11371, 11372, 11373, 11374, 11375, 11377, 11378, 11379, 11380, 11381, 11385, 11386, 11390
+							<br/>Forest Hills Gardens zip code: 11375 
+							<br/>Forest Hills zip code: 11375
+							<br/>Fresh Meadows zip code: 11365, 11366
+							<br/>Fresh Pond zip code: 11385 
+							<br/>Glen Oaks zip code: 11004
+							<br/>Glendale zip code: 11385
+							<br/>Hammels zip code: 11693 
+							<br/>Hillcrest zip code: 11365, 11366 
+							<br/>Hollis Hills zip code: 11427
+							<br/>Hollis zip code: 11423
+							<br/>Holliswood zip code: 11423 
+							<br/>Howard Beach zip code: 11414
+							<br/>Hunters Point zip code: 11101 
+							<br/>Jackson Heights zip code: 11372, 11370
+							<br/>Jamaica zip code: 11405, 11411, 11412, 11413, 11414, 11415, 11416, 11417, 11418, 11419, 11420, 11421, 11422, 11423, 11424, 11425, 11426, 11427, 11428, 11429, 11430, 11431, 11432, 11433, 11434, 11435, 11436, 11439, 11451, 11499
+							<br/>Jamaica Estates zip code: 11423, 11432 
+							<br/>Jamaica Hills zip code: 11432 
+							<br/>Kew Gardens Hills zip code: 11367
+							<br/>Kew Gardens zip code: 11415, 11418, 11424
+							<br/>Laurelton zip code: 11413
+							<br/>LeFrak City zip code: 11368 
+							<br/>Linden Hill zip code: 11354
+							<br/>Lindenwood zip code: 11414 
+							<br/>Long Island City zip code: 11101, 11102, 11103, 11104, 11105, 11106, 11109
+							<br/>Little Neck zip code: 11362, 11363
+							<br/>Malba zip code: 11357
+							<br/>Maspeth zip code: 11378
+							<br/>Meadowmere zip code: 11422 
+							<br/>Middle Village zip code: 11379
+							<br/>Murray Hill zip code: 11358
+							<br/>Neponsit zip code: 11694
+							<br/>New Hyde Park zip code: 11040, 11042
+							<br/>North Shore Towers zip code: 11005 
+							<br/>Oakland Gardens zip code: 11364
+							<br/>Ozone Park zip code: 11416, 11417
+							<br/>Pomonok zip code: 11365
+							<br/>Queens Village zip code: 11427, 11428, 11429
+							<br/>Queensboro Hill · zip code: 11355
+							<br/>Queensbridge zip code: 11101 
+							<br/>Ravenswood zip code: 11106 
+							<br/>Rego Park zip code: 11374
+							<br/>Richmond Hill zip code: 11418
+							<br/>Ridgewood zip code: 11385, 11386
+							<br/>Rochdale Village zip code: 11434
+							<br/>Rockaway Beach zip code: 11693
+							<br/>Rockaway Park zip code: 11694
+							<br/>Rosedale zip code: 11422
+							<br/>Roxbury zip code: 11697 
+							<br/>Saint Albans zip code: 11412
+							<br/>South Jamaica zip code: 11435, 11433, 11436, 11434 
+							<br/>South Ozone Park zip code: 11420, 11436
+							<br/>Springfield Gardens zip code: 11413
+							<br/>Sunnyside Gardens zip code: 11104 
+							<br/>Sunnyside zip code: 11104
+							<br/>Tudor Village zip code: 11417 
+							<br/>Whitestone zip code: 11357
+							<br/>Willets Point zip code: 11368 
+							<br/>Woodhaven zip code: 11421
+							<br/>Woodside zip code: 11377</p><br/>
+						</div>
 					</div>
-					
-					<br/><h3>Q:What Towns and zip codes does World of Discovery Day Camp pick up in?</h3>
-					<div class="longAns">
-					<p>Arverne zip code: 11692
-					<br/>Astoria Heights zip code: 11370 
-					<br/>Astoria zip code: 11102, 11103, 11105
-					<br/>Auburndale zip code: 11358 
-					<br/>Bay Terrace zip code: 11360 
-					<br/>Bayside zip code: 11359, 11360, 11361
-					<br/>Bayswater zip code: 11691 
-					<br/>Beechhurst zip code: 11357
-					<br/>Bellaire zip code: 11427, 11428, 11429 
-					<br/>Belle Harbor zip code: 11694
-					<br/>Bellerose zip code: 11426
-					<br/>Blissville zip code: 11101 
-					<br/>Breezy Point zip code: 11697
-					<br/>Briarwood zip code: 11435
-					<br/>Broad Channel zip code: 11693
-					<br/>Cambria Heights zip code: 11411
-					<br/>College Point zip code: 11356
-					<br/>Corona zip code: 11368
-					<br/>Ditmars zip code: 11005, 11370 
-					<br/>Douglaston zip code: 11362, 11363
-					<br/>Dutch Kills zip code: 11101 
-					<br/>East Elmhurst zip code: 11369, 11370, 11371
-					<br/>Edgemere zip code: 11690 
-					<br/>Elmhurst zip code: 11373
-					<br/>Far Rockaway zip code: 11096, 11690, 11691, 11692, 11693, 11694, 11695, 11697
-					<br/>Floral Park zip code: 11001, 11002, 11003, 11004, 11005
-					<br/>Flushing zip code: 11351, 11352, 11354, 11355, 11356, 11357, 11358, 11359, 11360, 11361, 11362, 11363, 11364, 11365, 11366, 11367, 11368, 11369, 11370, 11371, 11372, 11373, 11374, 11375, 11377, 11378, 11379, 11380, 11381, 11385, 11386, 11390
-					<br/>Forest Hills Gardens zip code: 11375 
-					<br/>Forest Hills zip code: 11375
-					<br/>Fresh Meadows zip code: 11365, 11366
-					<br/>Fresh Pond zip code: 11385 
-					<br/>Glen Oaks zip code: 11004
-					<br/>Glendale zip code: 11385
-					<br/>Hammels zip code: 11693 
-					<br/>Hillcrest zip code: 11365, 11366 
-					<br/>Hollis Hills zip code: 11427
-					<br/>Hollis zip code: 11423
-					<br/>Holliswood zip code: 11423 
-					<br/>Howard Beach zip code: 11414
-					<br/>Hunters Point zip code: 11101 
-					<br/>Jackson Heights zip code: 11372, 11370
-					<br/>Jamaica zip code: 11405, 11411, 11412, 11413, 11414, 11415, 11416, 11417, 11418, 11419, 11420, 11421, 11422, 11423, 11424, 11425, 11426, 11427, 11428, 11429, 11430, 11431, 11432, 11433, 11434, 11435, 11436, 11439, 11451, 11499
-					<br/>Jamaica Estates zip code: 11423, 11432 
-					<br/>Jamaica Hills zip code: 11432 
-					<br/>Kew Gardens Hills zip code: 11367
-					<br/>Kew Gardens zip code: 11415, 11418, 11424
-					<br/>Laurelton zip code: 11413
-					<br/>LeFrak City zip code: 11368 
-					<br/>Linden Hill zip code: 11354
-					<br/>Lindenwood zip code: 11414 
-					<br/>Long Island City zip code: 11101, 11102, 11103, 11104, 11105, 11106, 11109
-					<br/>Little Neck zip code: 11362, 11363
-					<br/>Malba zip code: 11357
-					<br/>Maspeth zip code: 11378
-					<br/>Meadowmere zip code: 11422 
-					<br/>Middle Village zip code: 11379
-					<br/>Murray Hill zip code: 11358
-					<br/>Neponsit zip code: 11694
-					<br/>New Hyde Park zip code: 11040, 11042
-					<br/>North Shore Towers zip code: 11005 
-					<br/>Oakland Gardens zip code: 11364
-					<br/>Ozone Park zip code: 11416, 11417
-					<br/>Pomonok zip code: 11365
-					<br/>Queens Village zip code: 11427, 11428, 11429
-					<br/>Queensboro Hill · zip code: 11355
-					<br/>Queensbridge zip code: 11101 
-					<br/>Ravenswood zip code: 11106 
-					<br/>Rego Park zip code: 11374
-					<br/>Richmond Hill zip code: 11418
-					<br/>Ridgewood zip code: 11385, 11386
-					<br/>Rochdale Village zip code: 11434
-					<br/>Rockaway Beach zip code: 11693
-					<br/>Rockaway Park zip code: 11694
-					<br/>Rosedale zip code: 11422
-					<br/>Roxbury zip code: 11697 
-					<br/>Saint Albans zip code: 11412
-					<br/>South Jamaica zip code: 11435, 11433, 11436, 11434 
-					<br/>South Ozone Park zip code: 11420, 11436
-					<br/>Springfield Gardens zip code: 11413
-					<br/>Sunnyside Gardens zip code: 11104 
-					<br/>Sunnyside zip code: 11104
-					<br/>Tudor Village zip code: 11417 
-					<br/>Whitestone zip code: 11357
-					<br/>Willets Point zip code: 11368 
-					<br/>Woodhaven zip code: 11421
-					<br/>Woodside zip code: 11377</p><br/></div>
+					<!-- right side box -->
+					<div  id="side1-2">
+						<!-- open house advertisment -->
+						<img  src="images/open-house.png">
+						<!-- prices table -->
+						<div class="prices">
+							<table>
+								<tr>
+									<td>Week</td>
+									<td>Tuition</td>
+									<td>Discounted Rates</td>
+								</tr>
+								<tr>
+									<td>8</td>
+									<td>$3199</td>
+									<td>$2999</td>
+								</tr>
+								<tr>
+									<td>7</td>
+									<td>$3099</td>
+									<td>$2899</td>
+								</tr>
+								<tr>
+									<td>6</td>
+									<td>$2999</td>
+									<td>$2799</td>
+								</tr>
+								<tr>
+									<td>5</td>
+									<td>$2599</td>
+									<td>$2499</td>
+								</tr>
+								<tr>
+									<td>4</td>
+									<td>$2199</td>
+									<td>$2099</td>
+								</tr>
+								<tr>
+									<td>3</td>
+									<td>$1799</td>
+									<td>$1699</td>
+								</tr>
+								<tr>
+									<td>2</td>
+									<td>$1299</td>
+									<td>$1199</td>
+								</tr>
+							</table>	
+						</div>
+					</div>
 				</div>
-				<div  id="side1-2">
-				<img  src="images/open-house.png">
-					<div class="prices">
-					<table>
-					<tr>
-					<td>Week</td>
-					<td>Tuition</td>
-					<td>Discounted Rates</td>
-					</tr>
-					<tr>
-					<td>8</td>
-					<td>$3199</td>
-					<td>$2999</td>
-					</tr>
-					<tr>
-					<td>7</td>
-					<td>$3099</td>
-					<td>$2899</td>
-					</tr>
-					<tr>
-					<td>6</td>
-					<td>$2999</td>
-					<td>$2799</td>
-					</tr>
-					<tr>
-					<td>5</td>
-					<td>$2599</td>
-					<td>$2499</td>
-					</tr>
-					<tr>
-					<td>4</td>
-					<td>$2199</td>
-					<td>$2099</td>
-					</tr>
-					<tr>
-					<td>3</td>
-					<td>$1799</td>
-					<td>$1699</td>
-					</tr>
-					<tr>
-					<td>2</td>
-					<td>$1299</td>
-					<td>$1199</td>
-					</tr>
-					</table>	
+			</div>	
+			<footer>
+				<!-- The blue area on the top of the Footer -->
+				<div id="line">
 				</div>
-			</div>
-		</div>
-		</div>	
-	<footer style="top=0">
-		<div id="line">
-		</div>
-		<div id="info">
-			<div id="footer1">
-			<img style="padding :20px;" src="images/logo.png">
-			</div>
-			<div id="footer2">
+				<!-- The footer area is  devided in to the boxes -->
 				
-				<h1>SUMMER DAY CAMP SPORTS</h1>
-				<p>
-				Over 30 Years of Summer Day Camp 
-				Fun and Excitement in Bayside, Queens!
-				For Kids ages 4 to 15</br>
+				<div id="info">
+					<!-- Footer box one that contains the logo-->
+					<div id="footer1">
+						<img style="padding :20px;" src="images/logo.png">
+					</div>
+					<!-- Footer box two that contains the contact information-->	
+					<div id="footer2">
+						<h1>SUMMER DAY CAMP SPORTS</h1>
+						<p>Over 30 Years of Summer Day Camp 
+						Fun and Excitement in Bayside, Queens!
+						For Kids ages 4 to 15<br/>
 
-				Address:</br>
+						Address:<br/>
 
-				1805 215th St
-				Bayside, NY 11360
-				Bay Terrace</br>
+						1805 215th St
+						Bayside, NY 11360
+						Bay Terrace<br/>
 
-				P.O. BOX 604010 
-				BAY TERRACE
-				NY 11360-4010 
-				718-229-3037 
-				info@worldofdiscovery.org
-				</p>
-			</div>
-			<div id="footer3">
-				<a href="https://www.facebook.com/World-of-Discovery-Day-Camp-552274004790354/"><img style="padding :20px;" src="images/facebook.png"></a>
-			</div>
+						P.O. BOX 604010 
+						BAY TERRACE
+						NY 11360-4010 
+						718-229-3037 
+						info@worldofdiscovery.org
+						</p>
+					</div>
+					<!-- Footer box three that contains the facebook link-->	
+					<div id="footer3">
+						<a href="https://www.facebook.com/World-of-Discovery-Day-Camp-552274004790354/"><img style="padding :20px;" src="images/facebook.png"></a>
+					</div>
+				</div>
+			</footer>
+		<!-- End of Wrapper -->
 		</div>
-	</footer>
-</body>
+	</body>
 </html>
