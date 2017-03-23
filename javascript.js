@@ -22,30 +22,35 @@ else
 	e.style.display = 'block';
 }
 
+//==============modal box function=============================
+ //when the button is clicked is calling a function that display the Modal box
+ var display= function()
+ {
+var m=document.getElementById("modal");
+	m.style.display="block";
+	showDivs(1);
+}
+//when x button is clicked is calling a function that hide the Modal box
+var closebtn= function()
+ {
+var m=document.getElementById("modal");
+	m.style.display="none";
+}
 //==============slideshow function=============================
+var slideIndex = 1;
+//showDivs(slideIndex);
 
-
-var slideindex=1;
-showdivs(slideindex);
-
-//function for going next or back
 function plusDivs(n) {
-	showdivs(slideindex+=n);
+    showDivs(slideIndex += n);
 }
 
-
-function showdivs(n)
-{
-	var i;
-	var x=document.getElementsByClassName("pic");
-	//if n was greater than the array of picture length , roll back to the first slide
-	if (n > x.length)
-		{slideindex=1;}
-	//n was less than 1 means we are at the first slide but we want to from the first back to the last 	
-	if (n < 1) {slideindex=x.length}
-		// normally go next 
-		for(i=0; i<x.length;i++){
-			x[i].style.display="none";
-		}
-		x[slideindex-1].style.display="block";
+function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    if (n > x.length) {slideIndex = 1} 
+    if (n < 1) {slideIndex = x.length} ;
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none"; 
+    }
+    x[slideIndex-1].style.display = "block"; 
 }

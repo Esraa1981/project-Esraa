@@ -239,7 +239,8 @@ footer
 /* styling the third part of facebook*/
 #footer3{
 	flex: 2;
-	 align-self: flex-end;
+	 align-self: center;
+	 flex-direction: column;
 }
 /* styling the page title*/
 .pageTitle
@@ -368,3 +369,75 @@ a:hover{
 	font-size: larger;
 }
 
+/*===========Modal box=================*/
+#btn{
+		height: 80px;
+		width: 400px;
+		font-size: 25px;
+		border-radius: 25px;
+		background: rgb(15,42,61);
+		color:white;
+		font-family: 'Nova Oval', cursive;
+		cursor: pointer;
+		margin: 20px;
+	}
+	#modal
+	{
+		background: rgba(0,0,0,.6);
+		height: 100%;
+		width:100%;
+		display:none;
+		z-index: 20;
+		position:fixed;
+		padding: 50px;
+		left:0;
+		top:0;
+	}
+	#modal-content
+	{
+		height: 520px;
+		width: 820px;
+		background: rgb(15,42,61);
+		position: relative;
+		margin: auto;
+		box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+		border: 1px solid #888;
+		padding: 20px;
+	}
+	#close
+	{	position: absolute;
+		float:right;
+		color:black;
+		top:10px;
+		right:10px;
+		z-index: 30;
+		border-radius: 25px;
+		background: linear-gradient(rgb(15,42,61), rgb(255,255,255));
+		height: 20px;
+		width:20px;
+		text-align: center;
+
+	}
+#close:hover
+	{
+		float:right;
+		color:black;
+		cursor: pointer;
+		background: linear-gradient( rgb(255,255,255),rgb(15,42,61))
+	}
+	/*=======slide show===========*/
+	.mySlides
+	{
+		height: 500px;
+		width: 800px;
+		display:none;
+	}
+	.previous, .next{
+		color:#fff;
+		background: rgb(67,155,214);
+		text-align:center;
+		cursor:pointer;
+		font-size: 20px;
+		width: 398px;
+		font-family: 'Alegreya', serif;
+	}
