@@ -4,7 +4,8 @@ var img_array=["images/2.jpg" ,"images/3.jpg" ,"images/4.jpg","images/5.jpg","im
 var index=0;
 function slide(){
 
-    document["banner"].src = img_array[index];
+    var PicArray=document.getElementById("banner");
+    PicArray.src=img_array[index];
     index++;
     if(index>=img_array.length){
     	index=0;
